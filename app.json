@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "myskills-expo",
-    "slug": "myskills-expo",
+    "name": "gofinances",
+    "slug": "gofinances",
     "version": "1.0.0",
     "assetBundlePatterns": [
       "**/*"
