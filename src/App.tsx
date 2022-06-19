@@ -11,6 +11,7 @@ import {
 
 import { Dashboard } from './screens/Dashboard'
 import theme from './config/styles/theme'
+import { StatusBar } from 'expo-status-bar';
 
 export default function App() {
   SplashScreen.preventAutoHideAsync();
@@ -27,6 +28,7 @@ export default function App() {
 
   return (
     <ThemeProvider theme={theme}>
+      <StatusBar style='light' />
       <Dashboard />
     </ThemeProvider>
   )
