@@ -1,35 +1,48 @@
 import React from 'react'
-import * as SplashScreen from 'expo-splash-screen';
+import { GestureHandlerRootView } from 'react-native-gesture-handler'
+import { NavigationContainer } from '@react-navigation/native'
+
+import * as SplashScreen from 'expo-splash-screen'
+import { StatusBar } from 'expo-status-bar'
 import { ThemeProvider } from 'styled-components'
 
 import {
   useFonts,
   Poppins_400Regular,
   Poppins_500Medium,
-  Poppins_700Bold
+  Poppins_700Bold,
 } from '@expo-google-fonts/poppins'
 
-import { Dashboard } from './screens/Dashboard'
+import { AppRoutes } from './routes/app.routes'
+
 import theme from './config/styles/theme'
-import { StatusBar } from 'expo-status-bar';
+
+import 'intl'
+import 'intl/locale-data/jsonp/pt-BR'
 
 export default function App() {
-  SplashScreen.preventAutoHideAsync();
-  const [ fontsLoaded ] = useFonts({
+  SplashScreen.preventAutoHideAsync()
+  const [fontsLoaded] = useFonts({
     Poppins_400Regular,
     Poppins_500Medium,
-    Poppins_700Bold
+    Poppins_700Bold,
   })
 
   if (!fontsLoaded) {
-    return null;
+    return null
   }
-  SplashScreen.hideAsync();
+
+  SplashScreen.hideAsync()
 
   return (
-    <ThemeProvider theme={theme}>
-      <StatusBar style='light' />
-      <Dashboard />
-    </ThemeProvider>
+    <GestureHandlerRootView style={{ flex: 1 }}>
+      <ThemeProvider theme={theme}>
+        <StatusBar style="light" />
+        <NavigationContainer>
+          <AppRoutes />
+        </NavigationContainer>
+      </ThemeProvider>
+    </GestureHandlerRootView>
   )
 }
+
