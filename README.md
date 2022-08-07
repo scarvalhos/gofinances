@@ -1,9 +1,5 @@
-<h1 align="center">
-    <img alt="NextLevelWeek" title="#NextLevelWeek" src="./src/assets/favicon.svg" />
-</h1>
-
-<h2 align="center"> 
-	Gofinances
+<h2 align="center">
+	<img alt="Gofinances" title="#Gofinances" src="./src/assets/log.svg" width="200px">
 </h2>
 
 ## 💻 Sobre o projeto
@@ -21,7 +17,7 @@ Algumas das ferramentas que foram usadas na construção do projeto:
 
 ## 🎨 Layout
 
-<p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
+<p align="center" style="display: flex; align-items: flex-start; justify-content: flex-start;">
   <img alt="Gofinances" title="#Gofinances" src="./src/assets/images/inicio.png" width="200px">
   <img alt="Gofinances" title="#Gofinances" src="./src/assets/images/dashboard.png" width="200px">
   <img alt="Gofinances" title="#Gofinances" src="./src/assets/images/cadastro.png" width="200px">
