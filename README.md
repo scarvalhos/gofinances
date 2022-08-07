@@ -22,10 +22,10 @@ Algumas das ferramentas que foram usadas na construção do projeto:
 ## 🎨 Layout
 
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-  <img alt="Gofinances" title="#Gofinances" src="./src/assets/images/inicio.png" width="300px">
-  <img alt="Gofinances" title="#Gofinances" src="./src/assets/images/dashboard.png" width="300px">
-  <img alt="Gofinances" title="#Gofinances" src="./src/assets/images/cadastro.png" width="300px">
-  <img alt="Gofinances" title="#Gofinances" src="./src/assets/images/resumo.png" width="300px">
+  <img alt="Gofinances" title="#Gofinances" src="./src/assets/images/inicio.png" width="200px">
+  <img alt="Gofinances" title="#Gofinances" src="./src/assets/images/dashboard.png" width="200px">
+  <img alt="Gofinances" title="#Gofinances" src="./src/assets/images/cadastro.png" width="200px">
+  <img alt="Gofinances" title="#Gofinances" src="./src/assets/images/resumo.png" width="200px">
 </p>
 
 Feito com ❤️ Samara Carvalho 👋🏽 [Entre em contato!](https://www.linkedin.com/in/samcarvalhos/)
