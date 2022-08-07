@@ -16,8 +16,9 @@ Algumas das ferramentas que foram usadas na construção do projeto:
 
 - [Expo][expo]
 - [TypeScript][typescript]
-- [VitoryNative][victorynative]
-- [StyledComponents][styledcomponents]
+- [Vitory Native][victorynative]
+- [Styled Components][styledcomponents]
+- [Login Social][loginsocial]
 
 
 ## 🎨 Layout
@@ -37,3 +38,4 @@ Feito com ❤️ Samara Carvalho 👋🏽 [Entre em contato!](https://www.linked
 [typescript]: https://www.typescriptlang.org/
 [victorynative]: https://www.npmjs.com/package/victory-native
 [styledcomponents]: https://styled-components.com/
+[loginsocial]: https://docs.expo.dev/guides/authentication/
