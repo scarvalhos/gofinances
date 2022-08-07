@@ -1,16 +1,16 @@
 import styled from 'styled-components/native'
+
+import { DataListTransactionsProps } from '.'
 import { FlatList, FlatListProps } from 'react-native'
 import { BorderlessButton } from 'react-native-gesture-handler'
 import { RFPercentage, RFValue } from 'react-native-responsive-fontsize'
-import Feather from '@expo/vector-icons/Feather'
+import { ReactNode } from 'react'
+
 import Constants from 'expo-constants'
+import Feather from '@expo/vector-icons/Feather'
 
-import { DataListTransactionsProps } from '.'
-
-type IconProps = {
-  name: string
-  color: string
-  theme: string
+interface LogoutButtonProps {
+  children: ReactNode
 }
 
 export const Container = styled.View`
@@ -65,7 +65,7 @@ export const UserName = styled.Text`
   font-family: ${({ theme }) => theme.fonts.bold};
 `
 
-export const LogoutButton = styled(BorderlessButton)``
+export const LogoutButton = styled(BorderlessButton)<LogoutButtonProps>``
 
 export const Icon = styled(Feather)`
   color: ${({ theme }) => theme.colors.success};
@@ -100,3 +100,9 @@ export const TransactionsList = styled(
     props: FlatListProps<DataListTransactionsProps>
   ) => FlatList<DataListTransactionsProps>
 )``
+
+export const LoadContainer = styled.View`
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+`

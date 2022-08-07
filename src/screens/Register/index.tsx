@@ -1,20 +1,20 @@
 import React, { useCallback, useState } from 'react'
-import { Modal, Keyboard, Alert } from 'react-native'
-import { TouchableWithoutFeedback } from 'react-native-gesture-handler'
+
 import AsyncStorage from '@react-native-async-storage/async-storage'
-
 import uuid from 'react-native-uuid'
-import { useNavigation } from '@react-navigation/native'
 
-import { useForm } from 'react-hook-form'
-import { yupResolver } from '@hookform/resolvers/yup'
 import * as Yup from 'yup'
 
-import { InputForm } from '../../components/Forms/InputForm'
-import { Button } from '../../components/Forms/Button'
-import { TransactionTypeButton } from '../../components/Forms/TransactionTypeButton'
-import { CategorySelectButton } from '../../components/Forms/CategorySelectButton'
+import { TouchableWithoutFeedback } from 'react-native-gesture-handler'
+import { Modal, Keyboard, Alert } from 'react-native'
+import { TransactionTypeButton } from '@components/Forms/TransactionTypeButton'
+import { CategorySelectButton } from '@components/Forms/CategorySelectButton'
 import { CategorySelect } from '../CategorySelect'
+import { useNavigation } from '@react-navigation/native'
+import { yupResolver } from '@hookform/resolvers/yup'
+import { InputForm } from '@components/Forms/InputForm'
+import { useForm } from 'react-hook-form'
+import { Button } from '@components/Forms/Button'
 
 import {
   Container,
@@ -24,6 +24,7 @@ import {
   Fields,
   TransactionsTypes,
 } from './styles'
+import { useAuth } from '@hooks/useAuth'
 
 interface FormData {
   name: string
@@ -34,8 +35,6 @@ type NavigationProps = {
   navigate: (screen: string) => void
 }
 
-const dataKey = '@gofinances:transactions'
-
 const schema = Yup.object().shape({
   name: Yup.string().required('Nome é obrigatório'),
   amount: Yup.number()
@@ -45,6 +44,9 @@ const schema = Yup.object().shape({
 })
 
 export const Register = () => {
+  const { user } = useAuth()
+  const dataKey = `@gofinances:transactions_user:${user.id}`
+
   const navigation = useNavigation<NavigationProps>()
 
   const [transactionType, setTransactionType] = useState<string | undefined>()

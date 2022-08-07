@@ -1,7 +1,7 @@
 import React from 'react'
 import { FlatList } from 'react-native'
-import { SelectButton } from '../../components/Forms/SelectButton'
-import { categories } from '../../utils/categories'
+import { SelectButton } from '@components/Forms/SelectButton'
+import { categories } from '@utils/categories'
 import {
   Container,
   Header,
