@@ -2,12 +2,15 @@
 	<img alt="Gofinances" title="#Gofinances" src="./src/assets/logo.svg" width="200px">
 </h2>
 
+
 ## 💻 Sobre o projeto
+
 
 O Gofinances foi desenvolvido durante a trilha de React Native no Ignite da Rocketeseat. O projeto é baseado em um app de controle de fincanças pessoais onde foi aplicado diversos conhecimentos.
 
 
 ## 🛠 Tecnologias
+
 
 Algumas das ferramentas que foram usadas na construção do projeto:
 
@@ -18,6 +21,7 @@ Algumas das ferramentas que foram usadas na construção do projeto:
 
 
 ## 🎨 Layout
+
 
 <p style="display: flex; align-items: flex-start; justify-content: flex-start;">
   <img alt="Gofinances" title="#Gofinances" src="./src/assets/images/inicio.png" width="200px">
